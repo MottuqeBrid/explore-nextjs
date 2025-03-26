@@ -46,3 +46,9 @@ export default function Blogs() {
 }
 
 // export default About;
+
+export const metadata = {
+  title: "Blogs Page",
+  description: "This is Blogs Page",
+};
+// export default function Page() {}

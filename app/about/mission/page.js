@@ -1,4 +1,6 @@
 import Button from "@/app/components/Button";
+import Image from "next/image";
+import thumbImage from "@/public/images/nature-image.jpg";
 
 const Mission = () => {
   return (
@@ -12,9 +14,22 @@ const Mission = () => {
           Accusamus consectetur magni repudiandae.
         </p>
       </div>
+
+      <Image
+        src={thumbImage}
+        placeholder="blur"
+        quality={40}
+        alt="this is nature image"
+      />
+
       <Button />
     </div>
   );
 };
 
 export default Mission;
+
+export const metadata = {
+  title: "Mission Page",
+  description: "This is Mission Page",
+};
